@@ -19,7 +19,7 @@ function App() {
               type="text"
               name="name"
               placeholder="Digite o email"
-              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-purple-600"
+              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:border-purple-600"
             />
           </div>
           <div>
@@ -27,7 +27,7 @@ function App() {
               type="password"
               name="password"
               placeholder="Digite a senha"
-              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-purple-600"
+              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:border-purple-600 hover:border-purple-600"
             />
           </div>
           <button
