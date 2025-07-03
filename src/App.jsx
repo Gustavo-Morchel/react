@@ -1,51 +1,43 @@
 import "./App.css";
+import { FaCat } from "react-icons/fa6";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline bg-blue-700 p-5 border-8 border-cyan-400 md:bg-red-700">
-        Hello world!
-      </h1>
-      <button className="uppercase rounded-4xl w-80 bg-green-700  md:bg-red-500 hover:bg-amber-400 cursor-pointer p-5 font-bold text-white text-4xl ">
-        Me clique
-      </button>
-      <div className="">
-        <form action="https://getform.io/f/byvyjzma" method="POST">
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <input type="text" name="message" />
-        {/* add hidden Honeypot input to prevent spams */}
-        <input
-          type="hidden"
-          name="_gotcha"
-          style={{ display: "none !important" }}
-        />
-        {/* checkbox handle */}
-        <input
-          type="checkbox"
-          name="subscribe"
-          defaultValue="yes"
-          defaultChecked=""
-        />
-        <input type="hidden" name="subscribe" defaultValue="no" />
-        {/* radio button handle */}
-        <input
-          type="radio"
-          name="gender"
-          defaultValue="male"
-          defaultChecked=""
-        />
-        <input type="radio" name="gender" defaultValue="female" />
-        <input type="radio" name="gender" defaultValue="other" />
-        {/* select field handle */}
-        <select name="work-experience">
-          <option value="one-year">0-1 years</option>
-          <option value="one-five-years">1-5 years</option>
-        </select>
-        <button type="submit">Send</button>
-      </form>
+    <div className="min-h-screen bg-pink-200 flex flex-col">
+      <nav className="bg-white py-3 shadow-md">
+        <div className="flex items-center justify-center text-gray-800 text-lg">
+          <FaCat size={40} color="#7C3AED" className="mr-5" />
+          <h1 className="text-2xl font-bold text-purple-600 ">DudaSys</h1>
+          <FaCat size={40} color="#7C3AED" className="ml-5 " />
+        </div>
+      </nav>
+      <div className="flex-grow flex items-center justify-center p-6">
+        <form action="https://getform.io/f/bllznleb" method="POST" className="max-w-md bg-white p-6 rounded-lg shadow-md space-y-2" >
+          <h2 className="text-2xl font-semibold text-center mb-4">Entrar na sua conta</h2>
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Digite o email"
+              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-purple-600"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="password"
+              placeholder="Digite a senha"
+              className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-purple-600"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-80 bg-purple-600 text-white py-2 rounded"
+          >
+            Enviar
+          </button>
+        </form>
       </div>
-      
     </div>
   );
 }
