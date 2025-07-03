@@ -25,7 +25,7 @@ function App() {
           <div>
             <input
               type="password"
-              name="password"
+              name="senha"
               placeholder="Digite a senha"
               className="w-80 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-1 focus:border-purple-600 hover:border-purple-600"
             />
